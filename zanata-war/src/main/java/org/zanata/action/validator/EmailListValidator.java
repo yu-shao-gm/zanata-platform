@@ -22,6 +22,7 @@ package org.zanata.action.validator;
 
 import java.io.Serializable;
 
+import javax.inject.Inject;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
@@ -33,6 +34,8 @@ public class EmailListValidator implements
         ConstraintValidator<EmailList, String>, Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Inject
+    // org.hibernate.validator.internal.constraintvalidators.hv.EmailValidator
     private ConstraintValidator<Email, CharSequence> emailValidator;
 
     @Override
@@ -56,8 +59,6 @@ public class EmailListValidator implements
 
     @Override
     public void initialize(EmailList parameters) {
-        emailValidator = new EmailValidator();
-        emailValidator.initialize(null);
     }
 
 }
