@@ -87,7 +87,8 @@
   },
   "dependencies": {
     "combokeys": "2.4.6",
-    "less": "^2.7.1",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
     "normalize.css": "3.0.1",
     "react-bootstrap": "^0.30.7",
     "suitcss-components-button": "^4.0.0",
