@@ -44,6 +44,11 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style', 'css!csso!postcss!rework')
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        loader: "style!css!autoprefixer!less"
       }
     ]
   },

@@ -61,6 +61,7 @@
     "react": "0.14.8",
     "react-addons-test-utils": "0.14.8",
     "react-addons-update": "0.14.8",
+    "react-bootstrap": "0.30.7",
     "react-dom": "0.14.8",
     "react-intl": "2.1.2",
     "react-redux": "4.4.5",
@@ -87,6 +88,7 @@
   "dependencies": {
     "combokeys": "2.4.6",
     "normalize.css": "3.0.1",
+    "react-bootstrap": "^0.30.7",
     "suitcss-components-button": "^4.0.0",
     "suitcss-components-button-group": "2.2.0",
     "suitcss-components-grid": "2.0.1",
