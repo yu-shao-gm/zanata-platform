@@ -7,6 +7,7 @@ import Languages from '../containers/Languages'
 import Explore from '../containers/Explore'
 import UserProfile from '../containers/UserProfile'
 import { View } from 'zanata-ui'
+import StyleGuide from '../containers/StyleGuide'
 
 export default class Root extends Component {
   render () {
@@ -27,6 +28,7 @@ export default class Root extends Component {
               <Route path='languages' component={Languages} />
               <Route path='profile/view/:username' component={UserProfile} />
               <Redirect from='profile' to={`profile/view/${username}`} />
+              <Route path='styleguide' component={StyleGuide} />
             </Route>
           </Router>
         </View>
