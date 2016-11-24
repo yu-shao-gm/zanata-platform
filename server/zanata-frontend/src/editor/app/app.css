@@ -47,6 +47,12 @@
 @import './css/theme/index.css';
 
 
+/**
+ * Bootstrap
+ */
+@import './css/variables.less';
+@import './css/style.less';
+
 /* Fix for hotkeys, remove this when reimplemented */
 
 .fade {
