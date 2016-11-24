@@ -116,7 +116,7 @@ class Explore extends Component {
     }
     /* eslint-disable react/jsx-no-bind, no-return-assign */
     return (
-      <div className='page' id='explore'>
+      <div className='page scrollViewTheme' id='explore'>
         <Helmet title='Search' />
         <div className='headerClasses'>
           <h1 className='headingTheme hidden' level='1'>Search</h1>
@@ -141,10 +141,8 @@ class Explore extends Component {
             </Button>
           </div>
         </div>
-        <div className='scrollViewTheme'>
-          <div className='contentViewContainer'>
+        <div className='contentViewContainer'>
             {content}
-          </div>
         </div>
       </div>
     )
