@@ -36,6 +36,9 @@ class TestModal extends Component {
             <h3>Locations</h3>
             <PanelGroup defaultActiveKey="1" accordion>
               <Panel bsStyle="info" header="Panel 1" eventKey="1">
+                <ul className="list-inline"><li>Project</li>
+                  <li>Version</li>
+                  <li>File location</li></ul>
                 <ListGroup>
                   <ListGroupItem className="small" header="Source">
                     <h3>Policy</h3>
