@@ -19,6 +19,8 @@ import Root from './containers/Root'
 import NeedSlugMessage from './containers/NeedSlugMessage'
 
 import './index.css'
+// bootstrap
+import './css/less/style.less'
 
 /**
  * Top level of the Zanata editor app.
