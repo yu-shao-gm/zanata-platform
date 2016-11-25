@@ -33,6 +33,7 @@ class TestModal extends Component {
             Translation Memory Details</span></small></Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <h3>Locations</h3>
             <PanelGroup defaultActiveKey="1" accordion>
               <Panel bsStyle="info" header="Panel 1" eventKey="1">
                 <ListGroup>
