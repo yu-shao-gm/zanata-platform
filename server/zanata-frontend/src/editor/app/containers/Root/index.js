@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Modal from '../../components/Modal'
-import { Button } from 'react-bootstrap'
+import Icon from '../../components/Icon'
+import { Button, Panel, PanelGroup,
+  ListGroup, ListGroupItem, Badge, Label } from 'react-bootstrap'
 
 class TestModal extends Component {
 
@@ -27,15 +29,37 @@ class TestModal extends Component {
           show={this.state.show}
           onHide={() => this.hideModal()}>
           <Modal.Header>
-            <Modal.Title>Example Modal</Modal.Title>
+            <Modal.Title><small><span className="pull-left">
+            Translation Memory Details</span></small></Modal.Title>
           </Modal.Header>
-          <Modal.Body>Hi There</Modal.Body>
+          <Modal.Body>
+            <PanelGroup defaultActiveKey="1" accordion>
+              <Panel bsStyle="info" header="Panel 1" eventKey="1">
+                <ListGroup>
+                  <ListGroupItem className="small" header="Source">
+                    <h3>Policy</h3>
+                    <ListGroupItem>
+                      <span><strong>Comments&nbsp;</strong>
+                        <Badge>0</Badge></span>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                  <ListGroupItem className="small" header="Target">
+                    <Label bsStyle="success">Translated</Label>
+                    <h3>Politica</h3>
+                    <ListGroupItem>
+                      <Icon name="comment" className="s2" />
+                      <span><strong>Comments&nbsp;</strong>
+                        <Badge>0</Badge></span>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                </ListGroup>
+              </Panel>
+              <Panel bsStyle="info" header="Panel 2"
+                eventKey="2">Panel 2 content</Panel>
+            </PanelGroup>
+          </Modal.Body>
           <Modal.Footer>
-            <Button bsStyle="link"
-              onClick={() => this.hideModal()}>Cancel</Button>
-            <Button bsStyle="primary" onClick={() => this.hideModal()}>
-              Submit
-            </Button>
+            <p>Last updated...</p>
           </Modal.Footer>
         </Modal>
       </div>)
