@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Modal from '../../components/Modal'
-import Icon from '../../components/Icon'
 import { Button, Panel, PanelGroup,
   ListGroup, ListGroupItem, Badge, Label } from 'react-bootstrap'
 
@@ -24,7 +23,7 @@ class TestModal extends Component {
       <div>
         <Button bsStyle="default"
           onClick={() => this.showModal()}>Launch Modal</Button>
-        <Modal className="tmdetails-modal"
+        <Modal
           show={this.state.show}
           onHide={() => this.hideModal()}>
           <Modal.Header>
@@ -34,35 +33,82 @@ class TestModal extends Component {
           <Modal.Body>
             <h3>Locations</h3>
             <PanelGroup defaultActiveKey="1" accordion>
-              <Panel bsStyle="info" header="Panel 1" eventKey="1">
-                <ul className="list-inline"><li>Project</li>
-                  <li>Version</li>
-                  <li>File location</li></ul>
+              <Panel bsStyle="info"
+                header="oVirt/master/frontend/.../ui/uicompat/UIconstants"
+                eventKey="1">
+                <ul className="list-inline"><li><small>oVirt</small></li>
+                  <li><small>master</small></li>
+                  <li><small>frontend/webadmin/modules/uicompat/src
+                    /main/resources/
+                  org/ovirt/engibe/ui/uicompat/UIConstants</small></li></ul>
                 <ListGroup>
                   <ListGroupItem className="small" header="Source">
                     <h3>Policy</h3>
-                    <ListGroupItem>
-                      <span><strong>Comments&nbsp;</strong>
-                        <Badge>0</Badge></span>
+                    <ListGroupItem className="comment-box"><h4>Comments
+                      &nbsp;<Badge>0</Badge></h4>
                     </ListGroupItem>
                   </ListGroupItem>
                   <ListGroupItem className="small" header="Target">
-                    <Label bsStyle="success">Translated</Label>
-                    <h3>Politica</h3>
-                    <ListGroupItem>
-                      <Icon name="comment" className="s2" />
-                      <span><strong>Comments&nbsp;</strong>
-                        <Badge>0</Badge></span>
+                    <h3>Politica <Label bsStyle="success">Translated
+                    </Label></h3>
+                    <ListGroupItem className="comment-box">
+                      <h4>Comments&nbsp;<Badge>0</Badge></h4>
                     </ListGroupItem>
                   </ListGroupItem>
                 </ListGroup>
               </Panel>
-              <Panel bsStyle="info" header="Panel 2"
-                eventKey="2">Panel 2 content</Panel>
+              <Panel bsStyle="info"
+                header="oVirt/master/frontend/.../ui/uicompat/UInotconstants"
+                eventKey="2">
+                <ul className="list-inline"><li><small>oVirt</small></li>
+                  <li><small>master</small></li>
+                  <li><small>frontend/webadmin/modules/uicompat/src
+                    /main/resources/
+                  org/ovirt/engibe/ui/uicompat/UInotconstants</small></li></ul>
+                <ListGroup>
+                  <ListGroupItem className="small" header="Source">
+                    <h3>Policy</h3>
+                    <ListGroupItem className="comment-box"><h4>Comments
+                      &nbsp;<Badge>0</Badge></h4>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                  <ListGroupItem className="small" header="Target">
+                    <h3>Politica <Label bsStyle="success">Translated
+                    </Label></h3>
+                    <ListGroupItem className="comment-box">
+                      <h4>Comments&nbsp;<Badge>0</Badge></h4>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                </ListGroup>
+              </Panel>
+              <Panel bsStyle="info"
+                header="oVirt/master/frontend/.../ui/uicompat/UIotherthings"
+                eventKey="3">
+                <ul className="list-inline"><li><small>oVirt</small></li>
+                  <li><small>master</small></li>
+                  <li><small>frontend/webadmin/modules/uicompat/src
+                    /main/resources/
+                  org/ovirt/engibe/ui/uicompat/UIotherthings</small></li></ul>
+                <ListGroup>
+                  <ListGroupItem className="small" header="Source">
+                    <h3>Policy</h3>
+                    <ListGroupItem className="comment-box"><h4>Comments
+                      &nbsp;<Badge>0</Badge></h4>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                  <ListGroupItem className="small" header="Target">
+                    <h3>Politica <Label bsStyle="success">Translated
+                    </Label></h3>
+                    <ListGroupItem className="comment-box">
+                      <h4>Comments&nbsp;<Badge>0</Badge></h4>
+                    </ListGroupItem>
+                  </ListGroupItem>
+                </ListGroup>
+              </Panel>
             </PanelGroup>
           </Modal.Body>
           <Modal.Footer>
-            <p>Last updated...</p>
+            <p>Last modified on 30/04/16 13:15 by <a href="">sdickers</a></p>
           </Modal.Footer>
         </Modal>
       </div>)

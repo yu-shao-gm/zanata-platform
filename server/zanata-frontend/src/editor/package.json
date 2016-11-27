@@ -16,6 +16,8 @@
     "build": "cd app && webpack --config webpack.prod.config.js --progress --bail --display-error-details",
     "draft": "cd app && webpack --config webpack.draft.config.js --progress --bail --display-error-details",
     "test": "jest",
+    "icons": "node scripts/createIconsComponent && node scripts/generateIconList",
+    "svg": "cd app svg-sprite -sD /components/Icons --symbol-dest '' --ss icons.svg --si /components/Icons/svgs/*.svg",
     "storybook": "start-storybook -p 9001 -s ./app/dist",
     "build-storybook": "build-storybook -s ./app/dist"
   },
@@ -87,8 +89,8 @@
   },
   "dependencies": {
     "combokeys": "2.4.6",
-    "less": "2.7.1",
-    "less-loader": "2.2.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
     "normalize.css": "3.0.1",
     "react-bootstrap": "^0.30.7",
     "suitcss-components-button": "^4.0.0",

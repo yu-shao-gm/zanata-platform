@@ -2703,6 +2703,22 @@ button.btn.btn-warning.dropdown-toggle > span.caret {
   color: #fff;
 }
 
+span.comment-box {
+  background-color:#ECEFF0;
+  vertical-align: super;
+}
+
+span.comment-box .badge {
+  font-size: 1em;
+  height:1.4em;
+}
+
+span.comment-box h4 {
+  color:@brand-primary;
+  margin:0;
+  padding:0;
+}
+
 .has-success .control-label, .checkbox.has-success, .radio.has-success {
   color: @brand-success;
 }
@@ -3736,8 +3752,8 @@ ul.nav-pills > li.active > a {
 }
 
 .label {
-  font-size: 75%;
-  font-weight: 700;
+  font-size: 70%;
+  font-weight: 600;
   line-height: 1;
   display: inline;
   padding: 0.2em 0.6em 0.3em;
@@ -3964,6 +3980,10 @@ button.list-group-item {
   overflow: hidden;
   height: 0;
   padding: 0;
+}
+
+.panel-info h4.panel-title {
+  color:@gray-lighter;
 }
 
 .panel {
@@ -4366,6 +4386,15 @@ button.list-group-item {
   border-bottom-color: transparent !important;
 }
 
+.modal .panel-info h4.panel-title {
+  font-size:0.9em;
+  font-weight:500;
+}
+
+.modal-header h3 {
+  margin:0;
+}
+
 .modal-open {
   overflow: hidden;
 }
@@ -4460,12 +4489,13 @@ button.list-group-item {
   line-height: 1.42857143;
   font-size: 1.725em;
   text-align: center;
+  font-weight:700;
 }
 
 .modal-body {
   position: relative;
-  padding: 2rem;
-  color: #333;
+  padding: 1rem;
+  color: @brand-primary;
 }
 
 .modal-body .scrollable {
@@ -4474,10 +4504,11 @@ button.list-group-item {
 }
 
 .modal-footer {
-  padding: 0.75rem;
-  text-align: right;
+  padding: 1em;
+  text-align: left;
   border-top: 0;
   background: rgba(0, 0, 0, .05);
+  color:@brand-primary;
 }
 
 .modal-footer .btn + .btn {
