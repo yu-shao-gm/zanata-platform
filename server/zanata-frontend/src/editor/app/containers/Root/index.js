@@ -25,7 +25,7 @@ class TestModal extends Component {
       <div>
         <Button bsStyle="default"
           onClick={() => this.showModal()}>Launch Modal</Button>
-        <Modal
+        <Modal className="tmdetails-modal"
           show={this.state.show}
           onHide={() => this.hideModal()}>
           <Modal.Header>
