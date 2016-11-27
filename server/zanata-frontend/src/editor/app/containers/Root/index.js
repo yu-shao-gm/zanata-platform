@@ -5,7 +5,6 @@ import { Button, Panel, PanelGroup,
   ListGroup, ListGroupItem, Badge, Label } from 'react-bootstrap'
 
 class TestModal extends Component {
-
   constructor () {
     super()
     this.state = {
